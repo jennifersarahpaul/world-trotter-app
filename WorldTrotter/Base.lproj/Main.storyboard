@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Convert-->
@@ -17,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuq-i6-Bbr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuq-i6-Bbr">
                                 <rect key="frame" x="147" y="120" width="306" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
@@ -29,8 +30,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1K-Gl-01L">
-                                <rect key="frame" x="242" y="222" width="117" height="84"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1K-Gl-01L">
+                                <rect key="frame" x="285" y="222" width="31" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -58,19 +59,29 @@
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="s1K-Gl-01L" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="25Q-kU-Fvk"/>
                             <constraint firstItem="kuq-i6-Bbr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2tB-ih-5kC"/>
                             <constraint firstItem="2Nt-xb-cML" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4pi-kh-yn4"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="s1K-Gl-01L" secondAttribute="trailing" id="54E-SY-HVI"/>
                             <constraint firstItem="kuq-i6-Bbr" firstAttribute="top" secondItem="2Nt-xb-cML" secondAttribute="bottom" constant="8" id="724-fL-r5D"/>
                             <constraint firstItem="1pJ-Uc-JGM" firstAttribute="centerX" secondItem="kuq-i6-Bbr" secondAttribute="centerX" id="7ez-Jg-ynR"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="1pJ-Uc-JGM" secondAttribute="trailing" id="Icn-FX-dol"/>
                             <constraint firstItem="1pJ-Uc-JGM" firstAttribute="centerX" secondItem="kuq-i6-Bbr" secondAttribute="centerX" id="O5X-A7-2Ih"/>
                             <constraint firstItem="2Nt-xb-cML" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="PDM-bR-CBg"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="mC0-Rk-6Zl" secondAttribute="trailing" id="QFI-Y4-9to"/>
                             <constraint firstItem="s1K-Gl-01L" firstAttribute="centerX" secondItem="kuq-i6-Bbr" secondAttribute="centerX" id="Qjt-5U-OUr"/>
+                            <constraint firstItem="mC0-Rk-6Zl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Swc-0l-Gsw"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="kuq-i6-Bbr" secondAttribute="trailing" id="UOm-3B-jDF"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="2Nt-xb-cML" secondAttribute="trailing" id="eon-e3-bBk"/>
                             <constraint firstItem="mC0-Rk-6Zl" firstAttribute="top" secondItem="s1K-Gl-01L" secondAttribute="bottom" constant="8" id="huF-Kc-xwP"/>
                             <constraint firstItem="mC0-Rk-6Zl" firstAttribute="centerX" secondItem="kuq-i6-Bbr" secondAttribute="centerX" id="i17-6J-0zK"/>
                             <constraint firstItem="s1K-Gl-01L" firstAttribute="top" secondItem="1pJ-Uc-JGM" secondAttribute="bottom" constant="8" id="jcG-FZ-ihy"/>
                             <constraint firstItem="1pJ-Uc-JGM" firstAttribute="top" secondItem="kuq-i6-Bbr" secondAttribute="bottom" constant="8" id="jqh-s5-F2k"/>
+                            <constraint firstItem="2Nt-xb-cML" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nxV-NN-IwB"/>
+                            <constraint firstItem="kuq-i6-Bbr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pJZ-Lq-cBO"/>
                             <constraint firstItem="mC0-Rk-6Zl" firstAttribute="centerX" secondItem="kuq-i6-Bbr" secondAttribute="centerX" id="ra5-EF-91o"/>
                             <constraint firstItem="s1K-Gl-01L" firstAttribute="centerX" secondItem="kuq-i6-Bbr" secondAttribute="centerX" id="tAz-Ak-lNj"/>
+                            <constraint firstItem="1pJ-Uc-JGM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tLJ-8g-215"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="eIL-SP-BjR" appends="YES" id="igH-6v-roB"/>
